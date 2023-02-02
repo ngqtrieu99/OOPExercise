@@ -6,13 +6,13 @@ using interfaceImplementation;
 
 namespace ConstructorObject
 {
-    public class constructor : IDataCenter
+    public class Constructor : IDataCenter
     {
-        private string name {get; set; }
-        private int age {get; set; }
-        private string gender {get; set; }
-        private string address {get; set; }
-        private int level {get; set; }
+        public string name {get; set; }
+        public int age {get; set; }
+        public string gender {get; set; }
+        public string address {get; set; }
+        public int level {get; set; }
 
         public void setProperty(string name, int Workerage, string gender, string address, int Workerlevel)
         {
@@ -23,19 +23,14 @@ namespace ConstructorObject
             level = Workerlevel;
         }
 
-        public void convertDataType(string[] data)
-        {
-            
-        }
-
-        public static List<string> fetch5Data(List<string> data)
+        public List<string> fetch5Data(List<string> data)
         {
             List<string> list = new List<string>();
             for(int i = 0; i < 5; i++)
             {
-                list[i] = list.Add(data.ElementAt(0));            
+                list[i] = data.ElementAt(i);            
             }
-            return temp;
+            return list;
         }
 
 

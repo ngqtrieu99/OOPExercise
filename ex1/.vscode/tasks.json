@@ -9,7 +9,8 @@
                 "build",
                 "${workspaceFolder}/ex1.csproj",
                 "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "/consoleloggerparameters:NoSummary",
+                "-nowarn" 
             ],
             "problemMatcher": "$msCompile"
         },

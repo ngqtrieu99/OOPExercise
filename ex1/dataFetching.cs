@@ -9,10 +9,7 @@ namespace interfaceImplementation
     {
         // Fetch first 5 lines of the data table to a tempstring 
         // return a string array of 5 to convert it to the appropriate data type 
-        void fetch5Data();
-
-        // Convert to the suitable data type depend on class properties
-        void convertDataType(string[] data);
+        List<string> fetch5Data(List<string> data);
     }
 
     class DataOperations
@@ -25,11 +22,13 @@ namespace interfaceImplementation
             return dataConverted;
         }
 
-        public static string[] remove5Data(ref string[] data)
+        public static List<string> remove5Data(ref List<string> data)
         {
-            var foos = new List<foos>(data);
-            foos.RemoveAt(0);
-            return foos.ToArray();
+            for(int i = 0; i < 5; i++)
+            {
+                data.RemoveAt(0);
+            }
+            return data;
         }
     }
 }

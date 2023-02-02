@@ -1,29 +1,5 @@
-Brooklyn Day
-21
-Nam
-3955 My Drive
-Marine engineer
-
-Sammy Hunter
-30
-Nam
-4536 Boone Street
-Industrial engineer
-
-Misael Mahoney
-35
-Nu
-1133 Simpson Square
-Computer engineer
-
-Reilly Mata
-37
-Nam
-3229 Brown Avenue
-Biomedical engineer
-
-Annie Merritt
-78
-Nu
-2886 Freedom Lane
-Civil engineer
+001, Brooklyn Day, 21, Nam, 3955, My Drive, Marine engineer
+002, Sammy Hunter, 30,Nam, 4536 Boone Street, Industrial engineer
+003, Misael Mahoney, 35, Nu, 1133 Simpson Square, Computer engineer
+004, Reilly Mata, 37, Nam, 3229 Brown Avenue, Biomedical engineer
+005, Annie Merritt, 78, Nu, 2886 Freedom Lane, Civil engineer

@@ -6,7 +6,7 @@ using interfaceImplementation;
 
 namespace employeeObject
 {
-    public class employee
+    public class Employee
     {
         public string name {get; set; }
         public int age {get; set; }
@@ -22,14 +22,6 @@ namespace employeeObject
         public static void fetchData()
         {
             Console.WriteLine("");
-        }
-        employee(string name, int age, string gender, string address, string work)
-        {
-            this.name = name;
-            this.age = age;
-            this.gender = gender;
-            this.address = address;
-            this.work = work;
         }
     }
 }
