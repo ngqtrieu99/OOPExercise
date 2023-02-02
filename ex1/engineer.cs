@@ -14,15 +14,6 @@ namespace engineerObject
         public string address {get; set; }
         public string field {get; set; }
 
-        public static void convertDataType(string[] data)
-        {
-            Console.WriteLine("");
-        }
-
-        public static void fetchData()
-        {
-            Console.WriteLine("");
-        }
         engineer(string name, int age, string gender, string address, string field)
         {
             this.name = name;

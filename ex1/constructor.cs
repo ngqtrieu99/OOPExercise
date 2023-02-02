@@ -6,35 +6,38 @@ using interfaceImplementation;
 
 namespace ConstructorObject
 {
-    public class constructor
+    public class constructor : IDataCenter
     {
-        public string name {get; set; }
-        public int age {get; set; }
-        public string gender {get; set; }
-        public string address {get; set; }
-        public int level {get; set; }
+        private string name {get; set; }
+        private int age {get; set; }
+        private string gender {get; set; }
+        private string address {get; set; }
+        private int level {get; set; }
 
-        public static void convertDataType(string[] data)
+        public void setProperty(string name, int Workerage, string gender, string address, int Workerlevel)
         {
-            foreach(string line in data)
+            name = name.Trim('\n');
+            age = Workerage;
+            gender = gender.Trim('\n');
+            address = address.Trim('\n');
+            level = Workerlevel;
+        }
+
+        public void convertDataType(string[] data)
+        {
+            
+        }
+
+        public static List<string> fetch5Data(List<string> data)
+        {
+            List<string> list = new List<string>();
+            for(int i = 0; i < 5; i++)
             {
-                
+                list[i] = list.Add(data.ElementAt(0));            
             }
-        }
-
-        public static void fetchData()
-        {
-            Console.WriteLine("");
+            return temp;
         }
 
 
-        constructor(string name, int age, string gender, string address, int level)
-        {
-            this.name = name;
-            this.age = age;
-            this.gender = gender;
-            this.address = address;
-            this.level = level;
-        }
     }
 }
