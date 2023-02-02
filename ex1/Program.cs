@@ -1,7 +1,7 @@
-﻿using joke;
-using System.Threading;
+﻿using System.Threading;
 using conversations;
 using Management;
+
 namespace ex1
 {
     class Test
@@ -18,14 +18,43 @@ namespace ex1
             Console.WriteLine("============================================");
             switch(Console.ReadKey(true).Key)
             {
+                // Add new staff
                 case ConsoleKey.D1: 
-                
+                        Manager.addStaff();
+                        Console.WriteLine("Finished");
+                        Thread.Sleep(2000);
+                        start();
+                break;
+
+                case ConsoleKey.D2:
+                        Manager.getStaffInfo();
+                        Thread.Sleep(2000);
+                        start();
+                break;
+
+                case ConsoleKey.D3:
+                break;
+
+                case ConsoleKey.D4:
+                Console.WriteLine("Press any key to quit...");
+                Console.ReadKey();
+                break;
+
+                default:
+                Console.WriteLine("Sorry we do not accept other inputs but those four options. Please try again.");
+                Thread.Sleep(2000);
+                Console.WriteLine("Let's try again!");
+                Console.Clear();
+                start();
                 break;
 
             }
         }
         public static void Main()
         {
+            // Redundant input value that needs to be removed from user choice
+            char[] charsToTrim = { '*', ' ', '\'', '\n'};
+
             string answer;
             Console.WriteLine("Hi man!");
             Thread.Sleep(2000);
@@ -36,10 +65,15 @@ namespace ex1
             while(i < 5)
             {
                 answer = Console.ReadLine();
+
+                // Tenary to check if answer is a blank input or something hmmm
+                answer = (answer != null) ? answer.Trim(charsToTrim) : answer; 
+
                 if(answer == "yes" 
                    || answer == "y" 
                    || answer == "Y" 
-                   || answer== "YES") 
+                   || answer == "YES"
+                   || answer == "Yes") 
                 {
                     Console.WriteLine(talk.yes);
                     start();
@@ -48,7 +82,7 @@ namespace ex1
                 else if((answer == "no" 
                         || answer == "n" 
                         || answer == "N" 
-                        || answer== "NO"))
+                        || answer == "NO"))
                 {
                     Console.WriteLine(talk.no[talk.ranGenerator(talk.no.Count())]);
                 }

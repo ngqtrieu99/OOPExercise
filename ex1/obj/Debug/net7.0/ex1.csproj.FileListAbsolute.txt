@@ -21,3 +21,10 @@ C:\Users\supnep\Desktop\OOPExercise\ex1\obj\Debug\net7.0\ex1.csproj.CoreCompileI
 C:\Users\supnep\Desktop\OOPExercise\ex1\obj\Debug\net7.0\ex1.dll
 C:\Users\supnep\Desktop\OOPExercise\ex1\obj\Debug\net7.0\refint\ex1.dll
 C:\Users\supnep\Desktop\OOPExercise\ex1\obj\Debug\net7.0\ex1.pdb
+C:\Users\supnep\Desktop\OOPExercise\ex1\bin\Debug\net7.0\ex1.exe
+C:\Users\supnep\Desktop\OOPExercise\ex1\bin\Debug\net7.0\ex1.deps.json
+C:\Users\supnep\Desktop\OOPExercise\ex1\bin\Debug\net7.0\ex1.runtimeconfig.json
+C:\Users\supnep\Desktop\OOPExercise\ex1\bin\Debug\net7.0\ex1.dll
+C:\Users\supnep\Desktop\OOPExercise\ex1\bin\Debug\net7.0\ex1.pdb
+C:\Users\supnep\Desktop\OOPExercise\ex1\obj\Debug\net7.0\ex1.genruntimeconfig.cache
+C:\Users\supnep\Desktop\OOPExercise\ex1\obj\Debug\net7.0\ref\ex1.dll

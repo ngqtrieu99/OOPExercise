@@ -1,3 +1,5 @@
+// This if just for fun. The author is boring due to VNPT mess his work
+
 namespace conversations
 {
     class talk

@@ -8,18 +8,18 @@ namespace ConstructorObject
 {
     public class Constructor : IDataCenter
     {
-        private string name {get; set; }
-        private int age {get; set; }
-        private string gender {get; set; }
-        private string address {get; set; }
-        private int level {get; set; }
+        public string name {get; private set; }
+        public int age {get; private set; }
+        public string gender {get; private set; }
+        public string address {get; private set; }
+        public int level {get; private set; }
 
-        Constructor(string name, int Workerage, string gender, string address, int Workerlevel)
+        public void setProperty(string fullname, int Workerage, string genderWorker, string addressHome, int Workerlevel)
         {
-            name = name.Trim('\n');
+            name = fullname;
             age = Workerage;
-            gender = gender.Trim('\n');
-            address = address.Trim('\n');
+            gender = genderWorker;
+            address = addressHome;
             level = Workerlevel;
         }
 

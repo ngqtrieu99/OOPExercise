@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <NoWarn>8981, 8618, 0219, 8600</NoWarn>
+    <NoWarn>8981, 8618, 0219, 8600, 8604, 8601</NoWarn>
   </PropertyGroup>
 
 </Project>

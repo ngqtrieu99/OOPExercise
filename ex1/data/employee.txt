@@ -3,3 +3,4 @@ Lilia Lang,30,Nam,3455 Feathers HoovesDrive,Data entryclerk
 Keegan Humphrey,35,Nu,1335 Snyder Avenue,Receptionist
 Joseph Graves,37,Nam,3730 Hawks Nest Lane,Administrative assistant
 Virginia Russo,78,Nu,801 Richards Avenue,Office manager
+Annie Merritt,78,Nu,2886 Freedom Lane,Office manager

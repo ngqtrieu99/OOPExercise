@@ -8,20 +8,19 @@ namespace employeeObject
 {
     public class Employee
     {
-        public string name {get; set; }
-        public int age {get; set; }
-        public string gender {get; set; }
-        public string address {get; set; }
-        public string work {get; set; }
+        public string name {get; private set; }
+        public int age {get; private set; }
+        public string gender {get; private set; }
+        public string address {get; private set; }
+        public string role {get; private set; }
 
-        public static void convertDataType(string[] data)
+        public void setProperty(string fullname, int Workerage, string genderWorker, string addressHome, string roleAtWork)
         {
-            Console.WriteLine("");
-        }
-
-        public static void fetchData()
-        {
-            Console.WriteLine("");
+            name = fullname;
+            age = Workerage;
+            gender = genderWorker;
+            address = addressHome;
+            role = roleAtWork;
         }
     }
 }
