@@ -4,8 +4,12 @@
     {
         public static void Main()
         {
-            string text = System.IO.File.ReadAllText(@"C:\Users\trieu.nguyen\Desktop\Exercise\ex1\data\constructor.txt");
-            Console.WriteLine("Contents of WriteText.txt = {0}", text);
+            string[] text1 = System.IO.File.ReadAllLines(@"C:\Users\trieu.nguyen\Desktop\Exercise\ex1\data\constructor.txt");
+            string[] text2 = System.IO.File.ReadAllLines(@"C:\Users\trieu.nguyen\Desktop\Exercise\ex1\data\employee.txt");
+            string[] text3 = System.IO.File.ReadAllLines(@"C:\Users\trieu.nguyen\Desktop\Exercise\ex1\data\engineer.txt");
+            Console.WriteLine(text1);
+            Console.WriteLine(text2);
+            Console.WriteLine(text3);
         }
     }
     

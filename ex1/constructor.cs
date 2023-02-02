@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using interfaceImplementation;
 
-namespace ex1
+namespace ConstructorObject
 {
     public class constructor
     {
@@ -12,6 +13,20 @@ namespace ex1
         public string gender {get; set; }
         public string address {get; set; }
         public int level {get; set; }
+
+        public static void convertDataType(string[] data)
+        {
+            foreach(string line in data)
+            {
+                
+            }
+        }
+
+        public static void fetchData()
+        {
+            Console.WriteLine("");
+        }
+
 
         constructor(string name, int age, string gender, string address, int level)
         {

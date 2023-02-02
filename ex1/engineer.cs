@@ -2,16 +2,27 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using interfaceImplementation;
 
-namespace ex1
+namespace engineerObject
 {
-    public class engineer
+    public class engineer 
     {
         public string name {get; set; }
         public int age {get; set; }
         public string gender {get; set; }
         public string address {get; set; }
         public string field {get; set; }
+
+        public static void convertDataType(string[] data)
+        {
+            Console.WriteLine("");
+        }
+
+        public static void fetchData()
+        {
+            Console.WriteLine("");
+        }
         engineer(string name, int age, string gender, string address, string field)
         {
             this.name = name;
