@@ -45,10 +45,10 @@ namespace ex1
                     start();
                     break;
                 }
-                else if(answer == "no" 
+                else if((answer == "no" 
                         || answer == "n" 
                         || answer == "N" 
-                        || answer== "NO")
+                        || answer== "NO"))
                 {
                     Console.WriteLine(talk.no[talk.ranGenerator(talk.no.Count())]);
                 }

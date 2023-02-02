@@ -8,13 +8,13 @@ namespace ConstructorObject
 {
     public class Constructor : IDataCenter
     {
-        public string name {get; set; }
-        public int age {get; set; }
-        public string gender {get; set; }
-        public string address {get; set; }
-        public int level {get; set; }
+        private string name {get; set; }
+        private int age {get; set; }
+        private string gender {get; set; }
+        private string address {get; set; }
+        private int level {get; set; }
 
-        public void setProperty(string name, int Workerage, string gender, string address, int Workerlevel)
+        Constructor(string name, int Workerage, string gender, string address, int Workerlevel)
         {
             name = name.Trim('\n');
             age = Workerage;
