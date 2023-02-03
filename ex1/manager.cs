@@ -11,19 +11,11 @@ namespace Management
 {
     public class Manager 
     {
-        // Fetch all data from text file into the matched object
-        public void getInPosition()
-        {
-            string constructorData = System.IO.File.ReadAllText(@"C:\Users\trieu.nguyen\Desktop\Exercise\ex1\data\constructor.txt");
-            string employeeData = System.IO.File.ReadAllText(@"C:\Users\trieu.nguyen\Desktop\Exercise\ex1\data\employee.txt");
-            string engineerData = System.IO.File.ReadAllText(@"C:\Users\trieu.nguyen\Desktop\Exercise\ex1\data\engineer.txt");
-        }
-
-        public static void getStaffInfo()
+        public static void getTargetStaffInfo(bool displayAll)
         {
             string? target = null;
             Console.WriteLine("So my friend! Who do you want to search huh?");
-            target = Console.ReadLine();
+            target = (displayAll == true) ? " " : Console.ReadLine();
             if(DataOperations.getAllInformation(ref target) == false)
             {
                 Console.WriteLine("Sorry man! Cannot find the person you are looking for");
@@ -58,7 +50,7 @@ namespace Management
             foreach (string line in data)
             {
                 string[] temp = line.Split(',');
-                if (temp.Length >= 0)
+                if (temp.Length >= 1 && line != " " && line != null)
                 {
                     Employee Employees = new Employee();
                     Employees.setProperty(temp[0],  

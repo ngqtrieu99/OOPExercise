@@ -27,12 +27,13 @@ namespace ex1
                 break;
 
                 case ConsoleKey.D2:
-                        Manager.getStaffInfo();
+                        Manager.getTargetStaffInfo(false);
                         Thread.Sleep(2000);
                         start();
                 break;
 
                 case ConsoleKey.D3:
+                        Manager.getTargetStaffInfo(true);
                 break;
 
                 case ConsoleKey.D4:
@@ -60,7 +61,7 @@ namespace ex1
             Thread.Sleep(2000);
             Console.WriteLine("We all know why you are here.");
             Thread.Sleep(2000);
-            Console.WriteLine("Do you mind telling me what do you want to do?");
+            Console.WriteLine("Type Yes to Continue | No and you still have to continue...");
             int i = 0;
             while(i < 5)
             {
@@ -92,11 +93,7 @@ namespace ex1
                 }
                 
                 if(i == 5) Console.WriteLine("Sigh! Enough! Bye! I won't force you anymore! *Sob* *Sob*");
-            }
-
-            //Console.WriteLine(fun.hehe);
-            
+            }          
         }
-    }
-    
+    }   
 }
