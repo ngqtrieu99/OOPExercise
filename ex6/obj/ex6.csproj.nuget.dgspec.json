@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\trieu.nguyen\\Desktop\\Exercise\\ex2\\ex2.csproj": {}
+    "C:\\Users\\trieu.nguyen\\Desktop\\Exercise\\ex6\\ex6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\trieu.nguyen\\Desktop\\Exercise\\ex2\\ex2.csproj": {
+    "C:\\Users\\trieu.nguyen\\Desktop\\Exercise\\ex6\\ex6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\trieu.nguyen\\Desktop\\Exercise\\ex2\\ex2.csproj",
-        "projectName": "ex2",
-        "projectPath": "C:\\Users\\trieu.nguyen\\Desktop\\Exercise\\ex2\\ex2.csproj",
+        "projectUniqueName": "C:\\Users\\trieu.nguyen\\Desktop\\Exercise\\ex6\\ex6.csproj",
+        "projectName": "ex6",
+        "projectPath": "C:\\Users\\trieu.nguyen\\Desktop\\Exercise\\ex6\\ex6.csproj",
         "packagesPath": "C:\\Users\\trieu.nguyen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\trieu.nguyen\\Desktop\\Exercise\\ex2\\obj\\",
+        "outputPath": "C:\\Users\\trieu.nguyen\\Desktop\\Exercise\\ex6\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\trieu.nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
