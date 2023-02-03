@@ -8,22 +8,22 @@ namespace ConstructorObject
 {
     public class Constructor : IDataCenter
     {
-        public string name {get; private set; }
-        public int age {get; private set; }
-        public string gender {get; private set; }
-        public string address {get; private set; }
-        public int level {get; private set; }
+        public string Name {get; private set; }
+        public int Age {get; private set; }
+        public string Gender {get; private set; }
+        public string Address {get; private set; }
+        public int Level {get; private set; }
 
-        public void setProperty(string fullname, int Workerage, string genderWorker, string addressHome, int Workerlevel)
+        public void SetProperty(string fullname, int Workerage, string genderWorker, string addressHome, int Workerlevel)
         {
-            name = fullname;
-            age = Workerage;
-            gender = genderWorker;
-            address = addressHome;
-            level = Workerlevel;
+            Name = fullname;
+            Age = Workerage;
+            Gender = genderWorker;
+            Address = addressHome;
+            Level = Workerlevel;
         }
 
-        public List<string> fetch5Data(List<string> data)
+        public List<string> Fetch5Data(List<string> data)
         {
             List<string> list = new List<string>();
             for(int i = 0; i < 5; i++)

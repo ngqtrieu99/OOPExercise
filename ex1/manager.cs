@@ -24,7 +24,7 @@ namespace Management
             }
         }
 
-        public static List<Constructor> getConstructorInfo(string[] data)
+        public static List<Constructor> GetConstructorInfo(string[] data)
         {
             List<Constructor> workerLst = new List<Constructor>();
             foreach (string line in data)
@@ -33,7 +33,7 @@ namespace Management
                 if (temp.Length >= 0)
                 {
                     Constructor contructors = new Constructor();
-                    contructors.setProperty(temp[0],  
+                    contructors.SetProperty(temp[0],  
                                     Convert.ToInt32(temp[1]),
                                     temp[2], 
                                     temp[3],
@@ -44,7 +44,7 @@ namespace Management
             return workerLst;
         }
 
-        public static List<Employee> getEmployeeInfo(string[] data)
+        public static List<Employee> GetEmployeeInfo(string[] data)
         {
             List<Employee> employeeLst = new List<Employee>();
             foreach (string line in data)
@@ -53,7 +53,7 @@ namespace Management
                 if (temp.Length >= 1 && line != " " && line != null)
                 {
                     Employee Employees = new Employee();
-                    Employees.setProperty(temp[0],  
+                    Employees.SetProperty(temp[0],  
                                     Convert.ToInt32(temp[1]),
                                     temp[2], 
                                     temp[3],
@@ -64,7 +64,7 @@ namespace Management
             return employeeLst;
         }
 
-        public static List<Engineer> getEngineerInfo(string[] data)
+        public static List<Engineer> GetEngineerInfo(string[] data)
         {
             List<Engineer> engineerLst = new List<Engineer>();
             foreach (string line in data)
@@ -73,7 +73,7 @@ namespace Management
                 if (temp.Length >= 0)
                 {
                     Engineer Engineers = new Engineer();
-                    Engineers.setProperty(temp[0],  
+                    Engineers.SetProperty(temp[0],  
                                     Convert.ToInt32(temp[1]),
                                     temp[2], 
                                     temp[3],
@@ -84,7 +84,7 @@ namespace Management
             return engineerLst;
         }
 
-        public static void addStaff()
+        public static void AddStaff()
         {
             string[] job = {"Worker", "Employee", "Engineer"};
             Console.WriteLine("Please choose his role: \n 1. Worker \n 2. Employee \n 3. Engineer");
@@ -100,12 +100,12 @@ namespace Management
                 Console.WriteLine("Gender: "); informationWorker.Add(Console.ReadLine());
                 Console.WriteLine("Address: "); informationWorker.Add(Console.ReadLine());
                 Console.WriteLine("Level: "); informationWorker.Add(Console.ReadLine());
-                newAdd1.setProperty(informationWorker.ElementAt(0),  
+                newAdd1.SetProperty(informationWorker.ElementAt(0),  
                                     Int32.Parse(informationWorker.ElementAt(1)),
                                     informationWorker.ElementAt(2), 
                                     informationWorker.ElementAt(3),
                                     Int32.Parse(informationWorker.ElementAt(4)));
-                DataOperations.writeInformation(ref informationWorker, 0);
+                DataOperations.WriteInformation(ref informationWorker, 0);
                 break;
 
                 case ConsoleKey.D2:
@@ -118,12 +118,12 @@ namespace Management
                 Console.WriteLine("Gender: "); informationEmployee.Add(Console.ReadLine());
                 Console.WriteLine("Address: "); informationEmployee.Add(Console.ReadLine());
                 Console.WriteLine("Role at work: "); informationEmployee.Add(Console.ReadLine());
-                newAdd2.setProperty(informationEmployee.ElementAt(0),  
+                newAdd2.SetProperty(informationEmployee.ElementAt(0),  
                                     Int32.Parse(informationEmployee.ElementAt(1)),
                                     informationEmployee.ElementAt(2), 
                                     informationEmployee.ElementAt(3),
                                     informationEmployee.ElementAt(4));
-                DataOperations.writeInformation(ref informationEmployee, 1);
+                DataOperations.WriteInformation(ref informationEmployee, 1);
                 break;
 
                 case ConsoleKey.D3:
@@ -137,12 +137,12 @@ namespace Management
                 Console.WriteLine("Gender: "); informationEngineer.Add(Console.ReadLine());
                 Console.WriteLine("Address: "); informationEngineer.Add(Console.ReadLine());
                 Console.WriteLine("Main field "); informationEngineer.Add(Console.ReadLine());
-                newAdd3.setProperty(informationEngineer.ElementAt(0),  
+                newAdd3.SetProperty(informationEngineer.ElementAt(0),  
                                     Int32.Parse(informationEngineer.ElementAt(1)),
                                     informationEngineer.ElementAt(2), 
                                     informationEngineer.ElementAt(3),
                                     informationEngineer.ElementAt(4));
-                DataOperations.writeInformation(ref informationEngineer, 2);
+                DataOperations.WriteInformation(ref informationEngineer, 2);
                 break;
             }
             

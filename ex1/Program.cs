@@ -6,7 +6,7 @@ namespace ex1
 {
     class Test
     {
-        public static void start()
+        public static void Start()
         {
             int choice = 0;
             Console.WriteLine("Let's start with the menu okay!");
@@ -20,20 +20,22 @@ namespace ex1
             {
                 // Add new staff
                 case ConsoleKey.D1: 
-                        Manager.addStaff();
+                        Manager.AddStaff();
                         Console.WriteLine("Finished");
                         Thread.Sleep(2000);
-                        start();
+                        Start();
                 break;
 
                 case ConsoleKey.D2:
                         Manager.getTargetStaffInfo(false);
                         Thread.Sleep(2000);
-                        start();
+                        Start();
                 break;
 
                 case ConsoleKey.D3:
                         Manager.getTargetStaffInfo(true);
+                        Thread.Sleep(2000);
+                        Start();
                 break;
 
                 case ConsoleKey.D4:
@@ -46,7 +48,7 @@ namespace ex1
                 Thread.Sleep(2000);
                 Console.WriteLine("Let's try again!");
                 Console.Clear();
-                start();
+                Start();
                 break;
 
             }
@@ -77,19 +79,20 @@ namespace ex1
                    || answer == "Yes") 
                 {
                     Console.WriteLine(talk.yes);
-                    start();
+                    Start();
                     break;
                 }
                 else if((answer == "no" 
                         || answer == "n" 
                         || answer == "N" 
-                        || answer == "NO"))
+                        || answer == "NO")
+                        || answer == "No")
                 {
-                    Console.WriteLine(talk.no[talk.ranGenerator(talk.no.Count())]);
+                    Console.WriteLine(talk.no[talk.RanGenerator(talk.no.Count())]);
                 }
                 else
                 {
-                    Console.WriteLine(talk.blank[talk.ranGenerator(talk.blank.Count())]);
+                    Console.WriteLine(talk.blank[talk.RanGenerator(talk.blank.Count())]);
                 }
                 
                 if(i == 5) Console.WriteLine("Sigh! Enough! Bye! I won't force you anymore! *Sob* *Sob*");

@@ -8,19 +8,19 @@ namespace employeeObject
 {
     public class Employee
     {
-        public string name {get; private set; }
-        public int age {get; private set; }
-        public string gender {get; private set; }
-        public string address {get; private set; }
-        public string role {get; private set; }
+        public string Name {get; private set; }
+        public int Age {get; private set; }
+        public string Gender {get; private set; }
+        public string Address {get; private set; }
+        public string Role {get; private set; }
 
-        public void setProperty(string fullname, int Workerage, string genderWorker, string addressHome, string roleAtWork)
+        public void SetProperty(string fullname, int Workerage, string genderWorker, string addressHome, string roleAtWork)
         {
-            name = fullname;
-            age = Workerage;
-            gender = genderWorker;
-            address = addressHome;
-            role = roleAtWork;
+            Name = fullname;
+            Age = Workerage;
+            Gender = genderWorker;
+            Address = addressHome;
+            Role = roleAtWork;
         }
     }
 }

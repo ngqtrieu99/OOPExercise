@@ -1,10 +1,10 @@
-// This if just for fun. The author is boring due to VNPT mess his work
+// This if just for fun. The author is boring since VNPT mess his work
 
 namespace conversations
 {
     class talk
     {
-        public static int ranGenerator(int number)
+        public static int RanGenerator(int number)
         {
             Random rand = new Random();
             return rand.Next(number);
