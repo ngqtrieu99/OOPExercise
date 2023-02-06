@@ -8,26 +8,32 @@ namespace StaffObject
 {
     public class Employee : IDataProcessor
     {
-        public static int Id = 0; 
+        public static int Id = 0;
         public string FullName { get; private set; }
         public string BirthDay { get; private set; }
         public string PhoneNumber { get; private set; }
         public string PersonalEmail { get; private set; }
         public int StaffLevel { get; private set; }
-        private static int StaffCount = 0;
+        
+        private static int staffCount = 0;
         public GlobalVariable.LevelStaff Officeposition { get; private set; }
+
+        public int GetId()
+        {
+            return Id;
+        }
 
         // Method to set properties of employee
         public void SetProperty(string fullname, string birth, string phone,
                                 string email, int level, GlobalVariable.LevelStaff officeposition)
                     {
-                        Id++;
+                        ++Id;
                         FullName = fullname;
                         BirthDay = birth;
                         PhoneNumber = phone;
                         PersonalEmail = email;
                         StaffLevel = level;
-                        StaffCount++;
+                        ++staffCount;
                         Officeposition = officeposition;
                     }
         public void showInformation() 

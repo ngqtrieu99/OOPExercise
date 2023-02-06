@@ -1,0 +1,15 @@
+C:\Users\supnep\Desktop\OOPExercise\jsontest\obj\Debug\net7.0\jsontest.csproj.AssemblyReference.cache
+C:\Users\supnep\Desktop\OOPExercise\jsontest\obj\Debug\net7.0\jsontest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\supnep\Desktop\OOPExercise\jsontest\obj\Debug\net7.0\jsontest.AssemblyInfoInputs.cache
+C:\Users\supnep\Desktop\OOPExercise\jsontest\obj\Debug\net7.0\jsontest.AssemblyInfo.cs
+C:\Users\supnep\Desktop\OOPExercise\jsontest\obj\Debug\net7.0\jsontest.csproj.CoreCompileInputs.cache
+C:\Users\supnep\Desktop\OOPExercise\jsontest\bin\Debug\net7.0\jsontest.exe
+C:\Users\supnep\Desktop\OOPExercise\jsontest\bin\Debug\net7.0\jsontest.deps.json
+C:\Users\supnep\Desktop\OOPExercise\jsontest\bin\Debug\net7.0\jsontest.runtimeconfig.json
+C:\Users\supnep\Desktop\OOPExercise\jsontest\bin\Debug\net7.0\jsontest.dll
+C:\Users\supnep\Desktop\OOPExercise\jsontest\bin\Debug\net7.0\jsontest.pdb
+C:\Users\supnep\Desktop\OOPExercise\jsontest\obj\Debug\net7.0\jsontest.dll
+C:\Users\supnep\Desktop\OOPExercise\jsontest\obj\Debug\net7.0\refint\jsontest.dll
+C:\Users\supnep\Desktop\OOPExercise\jsontest\obj\Debug\net7.0\jsontest.pdb
+C:\Users\supnep\Desktop\OOPExercise\jsontest\obj\Debug\net7.0\jsontest.genruntimeconfig.cache
+C:\Users\supnep\Desktop\OOPExercise\jsontest\obj\Debug\net7.0\ref\jsontest.dll

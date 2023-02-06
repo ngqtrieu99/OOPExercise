@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using InterfaceObject;
 using StaffObject;
 
@@ -32,7 +28,5 @@ namespace InternshipEmployees
         {
             Console.WriteLine("Enter the full name: "); Console.ReadLine();
         }
-
-
     }
 }

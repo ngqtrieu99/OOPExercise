@@ -6,6 +6,7 @@ using ex6;
 using GlobalConfiguration;
 using Manager;
 using InternshipEmployees;
+using StaffObject;
 
 
 namespace Manager
@@ -67,10 +68,12 @@ namespace Manager
         {
             if(type == GlobalVariable.LevelStaff.Intern)
             {
-                Internship intern = new Internship(); 
-                Console.WriteLine(Internship.employee.Id);
-            }
-
+                Internship intern1 = new Internship(); 
+                Internship intern2 = new Internship();
+                Console.WriteLine(Employee.Id); 
+        
+             }
         }
     }
 }
+    
