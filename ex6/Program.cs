@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Threading;
 using GlobalConfiguration;
-
+using Manager;
 namespace ex6
 {
     class Test
@@ -14,7 +14,7 @@ namespace ex6
                 // Call to the infoInput method
                 case ConsoleKey.D1:
                 case ConsoleKey.NumPad1:
-                    infoInput();
+                    Helperfunctions.infoInput();
                     break;
                 
                 case ConsoleKey.D2:

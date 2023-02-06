@@ -2,15 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using 
 
-namespace ex6
+namespace Manager
 {
-    public class Manager
+    public class Helperfunctions
     {
         public static void infoInput()
         {
-            Console.WriteLine("
+            
         }
     }
 }

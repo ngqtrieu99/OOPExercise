@@ -1,0 +1,9 @@
+# ignore all file in diretory 
+ex1/.vs/
+ex1/bin/
+ex1/obj/
+ex6/.idea/
+ex6/.vscode/
+ex1/.vscode/
+ex6/obj/
+ex6/bin/
