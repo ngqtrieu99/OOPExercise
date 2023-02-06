@@ -14,13 +14,13 @@ namespace ex6
                 // Call to the infoInput method
                 case ConsoleKey.D1:
                 case ConsoleKey.NumPad1:
-                    Helperfunctions.infoInput();
+                    Helperfunctions.LevelOptionDisplay();
                     break;
                 
                 case ConsoleKey.D2:
                 case ConsoleKey.NumPad2:
                     break;
-
+                            
                 case ConsoleKey.D3:
                 case ConsoleKey.NumPad3:
                     break;
@@ -52,7 +52,7 @@ namespace ex6
             Console.WriteLine("|| 2. Search staff                ||");
             Console.WriteLine("|| 3. Edit the information        ||");
             Console.WriteLine("|| 4. Remove staff                ||");
-            Console.WriteLine("|| 5. Exit                        ||");
+            Console.WriteLine("|| 5. Exit                        ||"); 
             Console.WriteLine("||                                ||"); 
             Console.WriteLine("====================================");
             CatchEvent();

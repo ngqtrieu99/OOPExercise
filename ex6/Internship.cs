@@ -7,20 +7,32 @@ using StaffObject;
 
 namespace InternshipEmployees
 {
-    public class Internship : IDataProcessor
+    public class Internship : IDataProcessor, IDataInput
     {
-        Employee _employee;
-        public string MajorSubject { get; private set; }
-        public int CurrentSememter { get; private set; }
-        public int UniversityName { get; private set; }
-
-
+        public Employee employee = new Employee();
+        public string Majorsubject { get; private set; }
+        public int Currentsemester { get; private set; }
+        public string Universityname { get; private set; }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+        public void SetProperty(string majorsubject, int currentsemeter, string universityname)
+        {
+            Majorsubject = majorsubject;
+            Currentsemester = currentsemeter;
+            Universityname = universityname;
+        }
 
         public void showInformation()
         {
-            Console.WriteLine("ID: {0} \n Name: {1} \n "
-                              + "Birth date: {2} \n Phone Number: {3} \n"
-                              + "Personal Email: {4} \n + Staff level: {5}" );
+            employee.showInformation();
+            Console.WriteLine("Major subject: {0}\n Current Semester: {1}\n University name: {2}",
+                              Majorsubject, Currentsemester, Universityname);
         }
+
+        public void Input()
+        {
+            Console.WriteLine("Enter the full name: "); Console.ReadLine();
+        }
+
+
     }
 }

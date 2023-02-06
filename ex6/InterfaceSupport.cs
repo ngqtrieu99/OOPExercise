@@ -9,4 +9,9 @@ namespace InterfaceObject
     {
         void showInformation();
     }
+
+    interface IDataInput
+    {
+        void Input();
+    }
 }
