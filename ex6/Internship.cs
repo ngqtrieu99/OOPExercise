@@ -1,32 +1,29 @@
 using InterfaceObject;
 using StaffObject;
+using ex6;
 
 namespace InternshipEmployees
 {
-    public class Internship : IDataProcessor, IDataInput
+    class Internship : Employee, IDataProcessor, IDataInput
     {
-        public Employee employee = new Employee();
-        public string Majorsubject { get; private set; }
-        public int Currentsemester { get; private set; }
-        public string Universityname { get; private set; }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-        public void SetProperty(string majorsubject, int currentsemeter, string universityname)
-        {
-            Majorsubject = majorsubject;
-            Currentsemester = currentsemeter;
-            Universityname = universityname;
-        }
+        // Create a new instance of Employee classs
+        public string MajorSubject { get; private set; }
+        public int CurrentSemester { get; private set; }
+        public string UniversityName { get; private set; }
 
         public void showInformation()
         {
-            employee.showInformation();
-            Console.WriteLine("Major subject: {0}\n Current Semester: {1}\n University name: {2}",
-                              Majorsubject, Currentsemester, Universityname);
+            Console.WriteLine("ID: {0}\n Name: {1}\n Birth Date: {2}\n Phone number: {3}\n Email: {4}\n"
+                               + "Major Subject: {5}\n Current Semester: {6}\n University Name: {7}\n"
+                               ,EmpId, FullName, BirthDate, PhoneNumber, EmailAddress, 
+                               MajorSubject, CurrentSemester, UniversityName);
         }
 
         public void Input()
         {
-            Console.WriteLine("Enter the full name: "); Console.ReadLine();
+            Console.WriteLine("Please enter the following ID: ");
+            InstanceFactory.GetInternship();
+
         }
     }
-}
+}   

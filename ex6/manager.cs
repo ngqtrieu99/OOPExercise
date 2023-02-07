@@ -4,10 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using ex6;
 using GlobalConfiguration;
-using Manager;
 using InternshipEmployees;
 using StaffObject;
-
 
 namespace Manager
 {
@@ -39,17 +37,17 @@ namespace Manager
             {
                 case ConsoleKey.D1:
                 case ConsoleKey.NumPad1:
-                     InitObject(GlobalVariable.LevelStaff.Intern);
+                     InstanceFactory.GetInternship();
                      break;
 
                 case ConsoleKey.D2:
                 case ConsoleKey.NumPad2:
-                     InitObject(GlobalVariable.LevelStaff.Fresher);
+                     
                      break;
 
                 case ConsoleKey.D3:
                 case ConsoleKey.NumPad3:
-                     InitObject(GlobalVariable.LevelStaff.Experienced);
+                     
                      break;
 
                 case ConsoleKey.D4:
@@ -62,17 +60,6 @@ namespace Manager
                     LevelCatchEvent();
                     break;
             }
-        }
-
-        public static void InitObject(GlobalVariable.LevelStaff type)
-        {
-            if(type == GlobalVariable.LevelStaff.Intern)
-            {
-                Internship intern1 = new Internship(); 
-                Internship intern2 = new Internship();
-                Console.WriteLine(Employee.Id); 
-        
-             }
         }
     }
 }

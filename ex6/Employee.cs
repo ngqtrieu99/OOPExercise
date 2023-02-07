@@ -6,41 +6,67 @@ using InterfaceObject;
 using GlobalConfiguration;
 namespace StaffObject
 {
-    public class Employee : IDataProcessor
+    class Employee
     {
-        public static int Id = 0;
-        public string FullName { get; private set; }
-        public string BirthDay { get; private set; }
-        public string PhoneNumber { get; private set; }
-        public string PersonalEmail { get; private set; }
-        public int StaffLevel { get; private set; }
-        
-        private static int staffCount = 0;
-        public GlobalVariable.LevelStaff Officeposition { get; private set; }
+
+        // Employee ID 
+        public static int Id = 0; 
+
+        public int EmpId { get; private set; } 
 
         public int GetId()
         {
-            return Id;
+            return EmpId;
         }
 
-        // Method to set properties of employee
-        public void SetProperty(string fullname, string birth, string phone,
-                                string email, int level, GlobalVariable.LevelStaff officeposition)
-                    {
-                        ++Id;
-                        FullName = fullname;
-                        BirthDay = birth;
-                        PhoneNumber = phone;
-                        PersonalEmail = email;
-                        StaffLevel = level;
-                        ++staffCount;
-                        Officeposition = officeposition;
-                    }
-        public void showInformation() 
+        // Name of employee
+        public string FullName { get; private set; }
+        public void SetName(string fullname)
         {
-            Console.WriteLine("ID: {0} \n FullName: {1} \n BirthDay: {2} \n PhoneNumber: {3} \n" +
-                              "Personal Email: {4} \n Staff Level \n Position: {5}",
-                              Id, FullName, BirthDay, PhoneNumber, PersonalEmail, StaffLevel, Officeposition);
+            FullName = fullname;
         }
+
+        // Birth date of employee
+        public DateOnly BirthDate { get; private set; }
+
+        public void SetBirthDate(DateOnly birthdate)
+        {
+            BirthDate = birthdate;
+        } 
+
+        // phone number of employee
+        public string PhoneNumber { get; private set; }
+        public void SetPhoneNumber(string phonenumber)
+        {
+            PhoneNumber = phonenumber;
+        }
+
+        // email address of employee
+        public string EmailAddress { get; private set; }
+        public void SetEmailAddress(string emailaddress)
+        {
+            EmailAddress = emailaddress;
+        }
+
+        // Number of staff 
+        public static int StaffCount = 0;
+        public int EmpCount { get; private set; }
+        public int GetEmpCount()
+        {
+            return EmpCount;
+        }
+        public void SetEmpCount()
+        {
+            EmpCount = StaffCount;
+        }
+        
+        // Constructor 
+        public Employee()
+        {
+            Id++;
+            this.EmpId = Id;
+            StaffCount++;
+        }
+
     }
 }

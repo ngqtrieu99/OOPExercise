@@ -5,13 +5,18 @@ using System.Threading.Tasks;
 
 namespace InterfaceObject
 {
-    interface IDataProcessor
+    public interface IDataProcessor
     {
         void showInformation();
     }
 
-    interface IDataInput
+    public interface IDataInput
     {
         void Input();
+    }
+
+    public interface IDataParsing
+    {
+        void Parsing();
     }
 }

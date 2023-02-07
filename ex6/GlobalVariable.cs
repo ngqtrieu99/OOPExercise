@@ -9,9 +9,18 @@ namespace GlobalConfiguration
     {
         public enum LevelStaff
         {
-            Intern, 
+            Intern = 1, 
             Fresher,
             Experienced 
+        }
+
+        public enum CollegeRank
+        {
+            Execellent = 1,
+            Good,
+            Normal,
+            Bad,
+            Maggot 
         }
     }
 }
